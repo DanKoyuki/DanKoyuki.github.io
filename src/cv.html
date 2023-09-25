@@ -5,25 +5,42 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Curriculum Vitae</title>
     <style>
-        th {
-            text-align: left;
-<<<<<<< HEAD
-            width: 110px;
-=======
-            width: 115px;
->>>>>>> cd8e7e4d6c978d9a00c70c43be12dd70544b774b
-            position: relative; /* Needed for positioning the colon */
+        body{
+            background-color: lightgrey;
         }
 
-        th::after {
-            content: ":"; /* Add a colon after the text */
-            position: absolute; /* Position the colon absolutely */
-            left: 100px; /* Adjust this value to control the distance */
+        .table-header {
+            text-align: left;
+            width: 115px;
+            position: relative;
+        }
+
+        .table-header::after {
+            content: ":";
+            position: absolute;
+            left: 100px;
         }
 
         .no-padding-margin {
             padding: 10px;
             margin: 5px;
+        }
+
+        img{
+            margin-left: 700px;
+        }
+
+        .table {
+            border-collapse: collapse;
+            width: 40%;
+            border: 5px double black;
+        }
+
+        .table th,
+        .table td {
+            border: 3px solid black;
+            padding: 8px;
+            text-align: left;
         }
     </style>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -42,30 +59,30 @@
     <hr>
     <table>
         <tr>
-            <th>Name</th>
+            <th class="table-header">Name</th>
             <td>Irwanto Danang Bahtiar</td>
             <td rowspan="6">
                 <img src="../res/Profile.png" width="170px" height="220px">
             </td>
         </tr>
         <tr>
-            <th>Date of Birth</th>
+            <th class="table-header">Date of Birth</th>
             <td>Majalengka, 19 Agustus 2003</td>
         </tr>
         <tr>
-            <th>Gender</th>
+            <th class="table-header">Gender</th>
             <td>Laki-laki</td>
         </tr>
         <tr>
-            <th>Religion</th>
+            <th class="table-header">Religion</th>
             <td>Islam</td>
         </tr>
         <tr>
-            <th>Handphone</th>
+            <th class="table-header">Handphone</th>
             <td>082116424576</td>
         </tr>
         <tr>
-            <th>E-Mail</th>
+            <th class="table-header">E-Mail</th>
             <td>1217050070@student.uinsgd.ac.id</td>
         </tr>
     </table>
@@ -117,22 +134,39 @@
     <hr>
     <h2>Skills</h2>
     <hr>
-    <ul class="no-padding-margin">
-        <li><strong>Programming Languages:</strong>
-            <ul>
-                <li>Java (Intermediate)</li>
-                <li>Ruby (Intermediate)</li>
-            </ul>
-        </li>
-        <li><strong>Language Proficiency:</strong>
-            <ul>
-                <li>English (Intermediate)</li>
-                <li>Japanese (Novice)</li>
-                <li>Indonesian (Native)</li>
-                <li>Sundanese (Native)</li>
-            </ul>
-        </li>
-    </ul>
+    <table class="table">
+        <tr>
+            <th>Category</th>
+            <th>Languages</th>
+            <th>Proficiency</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Programming Languages</td>
+            <td>Java</td>
+            <td>Intermediate</td>
+        </tr>
+        <tr>
+            <td>Ruby</td>
+            <td>Intermediate</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Language Proficiency</td>
+            <td>English</td>
+            <td>Intermediate</td>
+        </tr>
+        <tr>
+            <td>Japanese</td>
+            <td>Novice</td>
+        </tr>
+        <tr>
+            <td>Indonesian</td>
+            <td>Native</td>
+        </tr>
+        <tr>
+            <td>Sundanese</td>
+            <td>Native</td>
+        </tr>
+    </table>
     <hr>
     <h2>Contacts</h2>
     <hr>
@@ -151,8 +185,4 @@
         </li>
     </ul>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> cd8e7e4d6c978d9a00c70c43be12dd70544b774b
