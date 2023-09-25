@@ -9,6 +9,18 @@
             background-color: lightgrey;
         }
 
+        .table-header {
+            text-align: left;
+            width: 115px;
+            position: relative;
+        }
+
+        .table-header::after {
+            content: ":";
+            position: absolute;
+            left: 100px;
+        }
+
         .no-padding-margin {
             padding: 10px;
             margin: 5px;
